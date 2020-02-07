@@ -32,5 +32,5 @@ for page in range(1,int(pages)+1):
             "release_date":release_date,
             "inroduction":introduction,
         })    
-with open('yahoo_movie_in_theaters_json.csv', 'w', encoding='utf-8') as f:
+with open('yahoo_movie_in_theaters_json.json', 'w', encoding='utf-8') as f:
     json.dump(all_movie, f, indent=2, sort_keys=False, ensure_ascii=False)
