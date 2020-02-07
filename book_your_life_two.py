@@ -19,5 +19,5 @@ for book in all:
     except:
         author="none"
     print(author)
-    price=book.find("li","price_a").find("strong").text
+    price=book.find("li","price_a").find_all("strong")[-1].text
     print(price)
